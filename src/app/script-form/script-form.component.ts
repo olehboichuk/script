@@ -8,7 +8,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class ScriptFormComponent implements OnInit {
   scriptForm: FormGroup;
-  private loading = false;
+  loading = false;
 
   constructor(private formBuilder: FormBuilder) {
   }
