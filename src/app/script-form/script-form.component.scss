@@ -1,0 +1,59 @@
+$header_font: "Roboto", serif;
+$btn_font: "Exo 2", serif;
+$form_color: #FFFFFF;
+$disabled_color: #dddddd;
+$btn_color: #0AD69C;
+
+body {
+  overflow: hidden;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.content {
+  margin-top: 160px;
+  width: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $form_color;
+  box-shadow: 0px 5px 40px rgba(0, 45, 113, 0.06);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  font-family: $header_font;
+  height: 40px;
+  margin-bottom: 24px;
+}
+
+
+.form__button {
+  align-self: center;
+  width: 70%;
+  height: 42px;
+  background-color: $btn_color;
+  font-size: 18px;
+  font-family: $btn_font;
+  color: $form_color;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 14px;
+
+  &:disabled {
+    background: $disabled_color;
+  }
+}
