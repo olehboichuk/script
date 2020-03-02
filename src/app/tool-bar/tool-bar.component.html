@@ -6,4 +6,3 @@
   <button  [ngClass]="{'bar__item':_authService.hello,'bar__item__blue':!_authService.hello}" mat-button routerLink="/register" >РЕЄСТРАЦІЯ</button>
   <button *ngIf="false" [ngClass]="{'bar__item':_authService.hello,'bar__item__blue':!_authService.hello}" (click)="_authService.logout()" mat-button routerLink="/">ВИЙТИ</button>
 </mat-toolbar>
-
