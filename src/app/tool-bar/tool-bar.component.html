@@ -1,0 +1,9 @@
+<mat-toolbar [ngClass]="{'bar':_authService.hello,'bar__blue':!_authService.hello}">
+  <span class="filler"></span>
+  <button  [ngClass]="{'bar__item':_authService.hello,'bar__item__blue':!_authService.hello}" (click)="_authService.colorHeader(false)" mat-button routerLink="/hello">ДІМ</button>
+  <button  [ngClass]="{'bar__item':_authService.hello,'bar__item__blue':!_authService.hello}" (click)="_authService.colorHeader(true)" mat-button routerLink="/">УСІ МРІЇ</button>
+  <button  [ngClass]="{'bar__item':_authService.hello,'bar__item__blue':!_authService.hello}" mat-button routerLink="/login">УВІЙТИ</button>
+  <button  [ngClass]="{'bar__item':_authService.hello,'bar__item__blue':!_authService.hello}" mat-button routerLink="/register" >РЕЄСТРАЦІЯ</button>
+  <button *ngIf="false" [ngClass]="{'bar__item':_authService.hello,'bar__item__blue':!_authService.hello}" (click)="_authService.logout()" mat-button routerLink="/">ВИЙТИ</button>
+</mat-toolbar>
+

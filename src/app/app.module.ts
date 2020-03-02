@@ -4,15 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { ScriptFormComponent } from './script-form/script-form.component';
-import {MatFormFieldModule, MatInputModule, MatSelectModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule,
+  MatToolbarModule
+} from '@angular/material';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule} from "@angular/router";
 import { AppRoutingModule } from './app-routing.module';
+import {TestComponent} from "./test/test.component";
+import {ToolBarComponent} from "./tool-bar/tool-bar.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ScriptFormComponent
+    ScriptFormComponent,
+    TestComponent,
+    ToolBarComponent
   ],
   imports: [
     BrowserModule,
@@ -23,8 +33,11 @@ import { AppRoutingModule } from './app-routing.module';
     NoopAnimationsModule,
     MatSelectModule,
     RouterModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

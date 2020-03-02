@@ -15,8 +15,8 @@ export class ScriptFormComponent implements OnInit {
 
   ngOnInit() {
     this.scriptForm = this.formBuilder.group({
-      text: ['', Validators.required],
-      searcher: ['', Validators.required]
+      text: [''],
+      searcher: ['']
     });
   }
 
