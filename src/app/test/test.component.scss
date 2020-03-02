@@ -172,7 +172,7 @@ section:nth-child(3) {
 
 @include for-phone-only {
   .img__cont {
-    width: 80%;
+    width: 70%;
     align-self: center;
   }
 }
@@ -287,8 +287,8 @@ section:nth-child(3) {
     font-family: Roboto, serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 66px;
-    line-height: 112px;
+    font-size: 56px;
+    line-height: 92px;
     letter-spacing: 0.105em;
     color: #FFFFFF;
   }
@@ -340,7 +340,7 @@ section:nth-child(3) {
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
-    line-height: 42px;
+    line-height: 32px;
     letter-spacing: 0.105em;
     color: #FFFFFF;
     text-align: center;
@@ -460,7 +460,7 @@ section:nth-child(3) {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
-    line-height: 42px;
+    line-height: 28px;
     letter-spacing: 0.105em;
     color: #FFFFFF;
   }
@@ -592,8 +592,8 @@ section:nth-child(3) {
     font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 28px;
     letter-spacing: 0.29em;
     color: #FFFFFF;
     width: 90%;
@@ -610,10 +610,10 @@ section:nth-child(3) {
     font-family: Roboto, serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 52px;
+    font-size: 45px;
     letter-spacing: 0.29em;
 
-    line-height: 112px;
+    line-height: 82px;
     color: #74B9FF;
   }
 }
