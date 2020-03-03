@@ -8,7 +8,7 @@ import {MessageService} from "../services/message.service";
 })
 
 export class SidebarComponent implements OnInit, OnDestroy {
-  private _authService: MessageService;
+  public _authService: MessageService;
 
   constructor(private authService: MessageService) {
     this._authService = authService;
