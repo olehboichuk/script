@@ -1066,32 +1066,42 @@ section:nth-child(3) {
   display: none;
 }
 
-@include for-phone-only {
+@include for-desktop-up {
   .arrows__phone, .arrows__phone__blue {
     display: flex;
     top: 13px;
-    right: 13px;
+    left: 13px;
     position: absolute;
   }
 }
 
-.arrows {
-  display: flex;
-  align-self: flex-end;
-  margin-top: -30px;
-}
-
-.arrows__last {
-  display: flex;
-  align-self: flex-end;
-}
-
-@include for-phone-only {
-  .arrows, .arrows__last {
-    display: none;
+@include for-tablet-landscape-up {
+  .arrows__phone, .arrows__phone__blue {
+    display: flex;
+    top: 13px;
+    left: 13px;
+    position: absolute;
   }
 }
 
+@include for-tablet-portrait-up {
+  .arrows__phone, .arrows__phone__blue {
+    display: flex;
+    top: 13px;
+    left: 13px;
+    position: absolute;
+  }
+}
+
+@include for-phone-only {
+  .arrows__phone, .arrows__phone__blue {
+    display: flex;
+    top: 13px;
+    left: auto;
+    right: 13px;
+    position: absolute;
+  }
+}
 
 .arrow-up {
   // background-color: #111;
