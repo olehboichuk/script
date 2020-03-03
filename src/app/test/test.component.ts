@@ -10,7 +10,7 @@ export class TestComponent implements OnInit, OnDestroy {
 
   private idlePeriod = 100;
   private animationDuration = 1000;
-  public lastAnimation = 0;
+  private lastAnimation = 0;
   public index = 0;
   one = true;
   two = false;
@@ -32,12 +32,14 @@ export class TestComponent implements OnInit, OnDestroy {
   toggleText(index, state) {
     this.index = index;
     if (state === 'show') {
-      if (index == 0){
+      if (index == 0) {
         this.one = true;
         this.authService.colorHeader(false);
       }
-      if (index == 1)
+      if (index == 1) {
         this.two = true;
+        this.authService.colorHeader(false);
+      }
       if (index == 2) {
         this.tree = true;
         this.authService.colorHeader(true);

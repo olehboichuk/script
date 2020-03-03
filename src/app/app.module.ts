@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {TestComponent} from "./test/test.component";
 import {ToolBarComponent} from "./tool-bar/tool-bar.component";
 import {SidebarComponent} from "./sidebar/sidebar.component";
+import {SidebarBlueComponent} from "./sidebar-blue/sidebar-blue.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {SidebarComponent} from "./sidebar/sidebar.component";
     ScriptFormComponent,
     TestComponent,
     ToolBarComponent,
-    SidebarComponent
+    SidebarComponent,
+    SidebarBlueComponent
   ],
   imports: [
     BrowserModule,

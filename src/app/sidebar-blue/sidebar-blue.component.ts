@@ -2,13 +2,13 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {MessageService} from "../services/message.service";
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  selector: 'app-sidebar-blue',
+  templateUrl: './sidebar-blue.component.html',
+  styleUrls: ['./sidebar-blue.component.scss']
 })
 
-export class SidebarComponent implements OnInit, OnDestroy {
-  private _authService: MessageService;
+export class SidebarBlueComponent implements OnInit, OnDestroy {
+  public _authService: MessageService;
 
   constructor(private authService: MessageService) {
     this._authService = authService;
