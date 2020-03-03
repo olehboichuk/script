@@ -8,42 +8,48 @@ section {
   position: relative;
 }
 
-@include for-tablet-portrait-up {
+@include for-desktop-up {
   section {
-    height: 92vh;
-
+    height: 100vh;
   }
 }
 
 @include for-tablet-landscape-up {
   section {
-    height: 92vh;
+    height: 100vh;
   }
 }
 
-@include for-desktop-up {
+@include for-tablet-portrait-up {
   section {
-    height: 92vh;
+    height: 100vh;
+
   }
 }
-
+@include for-phone-only {
+  section {
+    height: 100vh;
+  }
+}
 
 main {
   background: #74B9FF;
   overflow: hidden;
 }
 
-@include for-tablet-landscape-up {
+@include for-desktop-up {
   main {
-    height: 92vh;
+    height: 100vh;
   }
 }
 
-@include for-desktop-up {
+
+@include for-tablet-landscape-up {
   main {
-    height: 92vh;
+    height: 100vh;
   }
 }
+
 
 
 section:nth-child(2) {
@@ -68,28 +74,28 @@ section:nth-child(3) {
 
 @include for-desktop-up {
   .show {
-    height: 92vh;
+    height: 100vh;
     width: 100vw;
   }
 }
 
 @include for-tablet-landscape-up {
   .show {
-    height: 92vh;
+    height: 100vh;
     width: 100vw;
   }
 }
 
 @include for-tablet-portrait-up {
   .show {
-    height: 92vh;
+    height: 100vh;
     width: 100vw;
   }
 }
 
 @include for-phone-only {
   .show {
-    height: 92vh;
+    height: 100vh;
     width: 100vw;
   }
 }
