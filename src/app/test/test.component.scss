@@ -1011,13 +1011,6 @@ section:nth-child(3) {
   border-bottom: 2px #fff solid;
 }
 
-@include for-phone-only {
-  .arrow, .arrow__blue {
-    position: absolute;
-    margin: 0 auto;
-    bottom: 75px;
-  }
-}
 
 .arrow__blue {
   border-right: 2px #74B9FF solid;
