@@ -10,8 +10,8 @@ export class TestComponent implements OnInit, OnDestroy {
 
   private idlePeriod = 100;
   private animationDuration = 1000;
-  private lastAnimation = 0;
-  private index = 0;
+  public lastAnimation = 0;
+  public index = 0;
   one = true;
   two = false;
   tree = false;
