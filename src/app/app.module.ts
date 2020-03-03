@@ -16,13 +16,15 @@ import {RouterModule} from "@angular/router";
 import { AppRoutingModule } from './app-routing.module';
 import {TestComponent} from "./test/test.component";
 import {ToolBarComponent} from "./tool-bar/tool-bar.component";
+import {SidebarComponent} from "./sidebar/sidebar.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     ScriptFormComponent,
     TestComponent,
-    ToolBarComponent
+    ToolBarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,18 @@
+<app-sidebar></app-sidebar>
+<div *ngIf="!(index==2)&&!(index==0)" class="arrows__phone" (click)="toggleText(0, 'show')">
+  <a class="arrow-up">
+    <span class="left-arm"></span>
+    <span class="right-arm"></span>
+    <span class="arrow-slide"></span>
+  </a>
+</div>
+<div *ngIf="(index==2)" class="arrows__phone__blue" (click)="toggleText(0, 'show')">
+  <a class="arrow-up">
+    <span class="left-arm__blue"></span>
+    <span class="right-arm__blue"></span>
+    <span class="arrow-slide__blue"></span>
+  </a>
+</div>
 <main>
   <div (wheel)="Scroll($event)" class="content">
     <section [ngClass]="{'text':true,'show':one}">
@@ -47,6 +62,7 @@
       </div>
     </section>
     <section [ngClass]="{'text':true,'show':tree}">
+
       <div class="section__intro">
         <p class="white__header">ЯК ЦЕ ПРАЦЮЄ ?</p>
         <div class="content__third">

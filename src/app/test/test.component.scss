@@ -1051,15 +1051,40 @@ section:nth-child(3) {
   }
 }
 
+.arrows__phone {
+  display: none;
+}
+
+.arrows__phone__blue {
+  display: none;
+}
+
+@include for-phone-only {
+  .arrows__phone, .arrows__phone__blue {
+    display: flex;
+    top: 13px;
+    right: 13px;
+    position: absolute;
+  }
+}
+
 .arrows {
   display: flex;
   align-self: flex-end;
   margin-top: -30px;
 }
-.arrows__last{
+
+.arrows__last {
   display: flex;
   align-self: flex-end;
 }
+
+@include for-phone-only {
+  .arrows, .arrows__last {
+    display: none;
+  }
+}
+
 
 .arrow-up {
   // background-color: #111;
@@ -1192,15 +1217,15 @@ section:nth-child(3) {
 .arrow-up:hover {
   transition: all .1s;
 
-  .left-arm:after,.left-arm__blue:after {
+  .left-arm:after, .left-arm__blue:after {
     transform: rotate(-10deg);
   }
 
-  .right-arm:after,.right-arm__blue:after {
+  .right-arm:after, .right-arm__blue:after {
     transform: rotate(10deg);
   }
 
-  .arrow-slide,.arrow-slide__blue {
+  .arrow-slide, .arrow-slide__blue {
     transition: all .4s ease-in-out;
     transform: translateY(200%);
   }
